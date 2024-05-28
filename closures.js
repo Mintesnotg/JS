@@ -17,6 +17,7 @@ const createcount = () => {
     return counters = ()=> {
         count++;
         return count;
+ 
     }
 }
 
@@ -53,4 +54,31 @@ console.log(personname.getname())
 personname.setname("Ami")
 console.log(personname.getname())
 
+
+//
+
+const CreateMath = (num1,num2) =>{
+
+    let _num1= num1;
+    let _num2= num2;
+
+    return  {
+
+         getsum :   () =>{
+             return _num1 + _num2
+        },
+
+        setNum : (newNum1,newNum2)=>{
+            _num1=newNum1;
+            _num2= newNum2
+        }
+    }
+
+}
+var number= CreateMath(10,20);
+ console.log( number.getsum())
+number.setNum(40,50)
+console.log( number.getsum()) 
+number.setNum(100,200)
+console.log( number.getsum())
 
