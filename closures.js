@@ -82,3 +82,38 @@ console.log( number.getsum())
 number.setNum(100,200)
 console.log( number.getsum())
 
+// more methods 
+
+
+const CreateCounter = (count) => {
+
+     return {
+
+        incriment : ()=> {
+             
+            count++;
+            return count;
+        } ,
+        decrement : () =>{
+               
+            count--;
+            return count;
+        },
+
+        getcount:()=>{
+              
+            return count;
+        }
+     }
+
+} 
+
+var countr= CreateCounter(1)
+ console.log( 'increment '+countr.incriment())
+ console.log( 'increment '+countr.incriment())
+ console.log( 'dec '+countr.decrement())
+ console.log( 'dec '+countr.decrement())
+ console.log( 'dec '+countr.decrement())
+ console.log( 'increment '+countr.incriment())
+
+
