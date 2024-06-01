@@ -32,15 +32,15 @@ handlesomework(1)
     return  new Promise((resolve,reject)=>{
          
         if (2===value) {
-             resolve();
+             resolve('success from promise');
         } else {
-            reject();
+            reject('error from promise');
         }
     })
   }
 
 
 
-  Promise.any([One('1'), Two(2)])
-    .then(() => console.log("success"))
-    .catch(() => console.log("error")).finally(()=> console.log('end') );
+  Promise.all([One('1'), Two(2)])
+    .then((message) => console.log("success " + message))
+    .catch((message) => console.log("error " +message)).finally(()=> console.log('end') );
