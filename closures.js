@@ -8,6 +8,9 @@ function outterfunction (outtervariable) {
     }
 
 }
+
+var outter= outterfunction("this is outer")
+var inner =outter.innerfunction("this is inner")
 //
 
 const createcount = () => {
