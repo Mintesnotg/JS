@@ -1,7 +1,7 @@
  const dealyfunction =(delay)=>{
    
     return new Promise ((resovle,reject)=>{
-
+    
 
         if (delay<0) {
             reject(`delay must be greter than ${0}`)
