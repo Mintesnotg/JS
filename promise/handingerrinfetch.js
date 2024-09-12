@@ -1,4 +1,4 @@
-fetch("https://jsonplaceholder.typicode.com/users/-1")
+fetch("https://jsonplaceholder.typicode.com/users/1")
   .then((res) => {
     if (res.ok) return res.json();
     return Promise.reject(res);
